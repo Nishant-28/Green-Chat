@@ -23,5 +23,5 @@ export const NavigationAction = () => {
                 </button>
             </ActionToolTip>
         </div>
-     );
+    );
 }
