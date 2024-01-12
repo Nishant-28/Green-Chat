@@ -3,6 +3,7 @@ import { createUploadthing, type FileRouter } from "uploadthing/next";
  
 const f = createUploadthing();
 
+// since upload thing has a auth to check id but we are already using clerk it can be directly integrated
 const handleAuth = ()=>{
     const {userId} = auth()
     if(!userId) throw new Error("Unauthorized user")
