@@ -2,15 +2,15 @@
 
 import { Plus } from "lucide-react";
 
-import { ActionToolTip } from "@/components/action-tooltip";
-import { useModal } from "@/hooks/use-model-store";
+import { ActionTooltip } from "@/components/action-tooltip";
+import { useModal } from "@/hooks/use-modal-store";
 
 export const NavigationAction = () => {
   const { onOpen } = useModal();
 
   return (
     <div>
-      <ActionToolTip
+      <ActionTooltip
         side="right"
         align="center"
         label="Add a server"
@@ -26,7 +26,7 @@ export const NavigationAction = () => {
             />
           </div>
         </button>
-      </ActionToolTip>
+      </ActionTooltip>
     </div>
   )
 }
