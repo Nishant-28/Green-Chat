@@ -56,7 +56,6 @@ export async function DELETE(
     return new NextResponse("Internal Error", { status: 500 });
   }
 }
-
 export async function PATCH(
   req: Request,
   { params }: { params: { channelId: string } }
@@ -101,9 +100,6 @@ export async function PATCH(
           update: {
             where: {
               id: params.channelId,
-              NOT: {
-                name: "general",
-              },
             },
             data: {
               name,
